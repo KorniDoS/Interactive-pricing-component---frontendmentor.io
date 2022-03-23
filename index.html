@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="author" content="KorniDoS">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+</head>
+<body>
+
+
+  <main class="d-flex">
+    <section class="intro-container d-flex">
+
+      <div class="intro-wrapper text-center">
+      <h1>Simple, traffic-based pricing</h1>
+      <p>
+      Sign-up for our 30-day trial.<br id="add_remove_br">
+      No credit card required. 
+      </p>
+    </div>
+    </section>
+
+
+    <section class="pricing-container d-flex text-center gap">
+     
+     <span><strong><label id="pageviews-number">100</label> Pageviews</strong></span>
+    
+     <input type="range" min="0" max="4" value="2" class="slider" id="price-range" step="1">
+
+     <div id="price">
+    </div>
+  
+    <div class="d-flex row billing gap-1">
+     <span>Monthly Billing</span>
+     <label class="switch">
+      <input type="checkbox" id="checkbox-ticked">
+      <span class="toggle round"></span>
+    </label>
+    <span>Yearly Billing</span>
+      <span id="discount-text">-25%</span>
+    </div>
+
+
+    <hr>
+
+    <div class="d-flex gap">
+      <ul class="perks">
+        <li>Unlimited websites</li>
+        <li>100% data ownership</li>
+        <li>Email reports</li>
+      </ul>
+<!--
+    <div class="call-to-action-button">
+      <a href="#">Start my trial</a>
+    </div>
+  -->
+ </div>
+
+ <div class="call-to-action-button">
+  <a href="#">Start my trial</a>
+</div>
+      
+     
+  
+    
+</section>
+
+
+
+</main>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/KorniDoS/">KorniDoS</a>.
+  </div>
+
+<script src="./script.js"></script>
+
+</body>
+</html>
